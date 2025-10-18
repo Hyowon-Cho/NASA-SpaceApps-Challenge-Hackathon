@@ -18,25 +18,25 @@ Detailed information about this project can be found in the link below.
 Detecting seismic activity on Mars and the Moon is essential for understanding planetary geology and enhancing space exploration. Our goal is to develop a model to identify seismic anomalies in planetary data to identify earthquakes. We also want to determine the patterns of seismicity on the Moon and Mars that we hypothesize can be divided into foreshocks, mainshocks, and aftershocks similar to Earth.
 
 ## Steps
-### Step 1 🌘
+### Step 1 
 For **Lunar data**, the data is relatively sufficient than Mars. For **Mars data**, we used IQR Method to overcome the problem of insufficient data. We trained scalar function to scale the datasets before we put them into our model.
 
-### Step 2 🌗
+### Step 2 
 We used **LSTM Autoencoder** to detect anomalies in time series data.
 
-### Step 3 🌖
+### Step 3 
 We visualized the detected anomalies in a graph, and highlighted the anomalies with a red marker for analysis.
 
-### Step 4 🌕
+### Step 4 
 We outputted the **CSV files** from the data that detected anomalies on the graph.
 
 ## Research Results
 
-### Pattern Analysis 🌍
+### Pattern Analysis 
 * Our analysis revealed patterns in lunar and Martian seismic activities that appear to follow Earth-like sequences of foreshocks, mainshocks, and aftershocks
 * The detected patterns, while similar in sequence, showed unique characteristics specific to each celestial body
 
-### Lunar Seismic Characteristics 🌘
+### Lunar Seismic Characteristics 
 #### Data Analysis
 * Benefited from relatively sufficient data compared to Mars
 * Successfully applied LSTM Autoencoder without requiring additional data processing techniques
@@ -47,7 +47,7 @@ We outputted the **CSV files** from the data that detected anomalies on the grap
 * Reconstruction MAE showed expected right-skewed distribution
 * Threshold determination proved effective for identifying significant events
 
-### Martian Seismic Analysis 🌓
+### Martian Seismic Analysis 
 #### Data Processing
 * Successfully implemented IQR method to address data insufficiency
 * Maintained data integrity while generating usable training sets
@@ -58,7 +58,7 @@ We outputted the **CSV files** from the data that detected anomalies on the grap
 * Plot 2 revealed a sequence of three minor events preceding a major seismic event, followed by continued vibrations
 * Pattern consistency suggests reliable detection despite limited data
 
-## Conclusions and Future Directions 🎓
+## Conclusions and Future Directions
 
 ### Research Impact
 #### Methodological Achievements
